@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comprar Ticket</title>
+</head>
+<body>
+    <header>
+        <main class="main">
+            <div class="main-logo">
+                <p class="main-p"> Conf Bs As</p>
+            </div>
+            <ul class="main-ul">
+            <a href="index.html"><li class="main-ul-li">La conferencia</li></a>
+            <a href="index.html"><li class="main-ul-li">Los oradores</li></a>
+            <a href="index.html"><li class="main-ul-li">el lugar y la fecha</li></a>
+            <a href="index.html"><li class="main-ul-li">Conviérte en orador</li></a>
+            <a href="tickets.html" target="_blank"><li id="comprar-ticket">Comprar Tickets</li></a>
+            </ul>
+        </main>
+    </header>
+    <section>
+        <article class="descuentos">
+            <div id="estudiantes">
+                <h2>Estudiante</h2>
+                <p>Tienen un descuento</p>
+                <p class="p-dto">80%<p> 
+                <p class="p-doc">* presentar documentacion</p>
+            </div>
+            <div id="trainee">
+                <h2>Trainee</h2>
+                <p>Tienen un descuento</p>
+                <p class="p-dto">50%<p>
+                <p class="p-doc">* presentar documentacion</p>
+            </div>
+            <div id="junior">
+                <h2>Junior</h2>
+                <p>Tienen un descuento</p>
+                <p class="p-dto">15%<p>
+                <p class="p-doc">* presentar documentacion</p>
+            </div>
+        </article>
+        
+        <article class="form--descuentos">
+            <P id="p-venta">VENTA</P>
+            <H1 id="h1-titulo">VALOR DE TICKET $200</H1>
+            <form id="form--dtos">
+                <div class="form--input">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input id= "input-correo"type="email" placeholder="correo">
+                <label class = "label-etiquetas" for="">Cantidad</label>
+                <label class = "label-etiquetas"for="">Categoria</label>
+                <input id="cantidad" type="number" placeholder="cantidad"> 
+                <select name="lista" id="select-option">
+                    <option value="estudiante">estudiante</option>
+                    <option value="trainee">trainee</option>
+                    <option value="junior">junior</option>
+                </select>
+                <div id="mostrar--pago">
+                    <p id="mostrar-pago--p">Total a Pagar:</p><span id="descuentoTotal"></span>
+                </div>
+                </div>
+            </form>
+            <div class="botones">
+            <button id="btn-borrar"><p>Borrar</p></button>
+            <button id="btn-resumen"><p>Resumen</p></button>
+            </div>
+            
+            
+        </article>
+        <footer>
+            <ul class="footer_ul">
+                <a href="">Preguntas frencuentes</a>
+                <a href="">Contactanos</a>
+                <a href="">Prensa</a>
+                <a href="">conferencias</a>
+                <a href="">Términos y condiciones</a>
+                <a href="">Privacidad</a>
+                <a href="">Estudiantes</a>
+            </ul>
+        </footer>
+    </section>
+
+    <script src="function.js"></script>
+</body>
+</html>

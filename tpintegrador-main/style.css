@@ -1,0 +1,559 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.main{
+    display: flex;
+    background-color: #2D2C35;
+}
+.main-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    margin-right:1em;
+    margin-left: .6em;
+}
+.main-logo img{
+    width: 100%;
+    height: 5em;
+    object-fit: contain;
+}
+.main-p {
+    font-size: .8em;
+    font-weight: bolder;
+    color: #fff;
+}
+.main-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .55em;
+    margin-left: 10px;
+}
+.main-ul-li{
+    margin: 5px;
+    color: #62616C;
+}
+.main-ul-li:hover{
+    opacity: 0.6;
+    color: #fff;
+}
+#comprar-ticket{
+    color: green;
+}
+#comprar-ticket:hover{
+    opacity: 0.6;
+    color: #fff;
+}
+
+
+@media (min-width:530px)and (max-width:1920px){
+    .main{
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .main-logo{
+        width: 20%;
+        justify-content: flex-start;
+    }
+    .main-logo img{
+        width: 50%;
+    }
+    .main-p{
+        font-size: 1.5em;
+        color: #fff;
+    }
+    .main-ul{
+        padding: 2em;
+        justify-content: flex-end;
+        width: 70%;
+    }
+    .main-ul li{
+        font-size: 1.5em;
+        margin: 1em;
+        color: #62616C;
+    }
+}
+/* section */
+
+/* edificio */
+.edificio{
+    display: flex;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/ba1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+}
+.edificio-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+}
+.btn-edificio button{
+    border-radius: .3em;
+    padding:.7em;
+    background: none;
+    border-style:none;
+    border: 1px solid white;
+    color: white;
+    margin: .5em;
+}
+#btn-compra{
+    background-color: green;
+    border-style: none;
+}
+.btn-edificio button:hover{
+    opacity: 0.7;
+}
+.edificio-texto p{
+    color: #fff;
+    align-self:end;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+.edificio-texto  h2{
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+@media (min-width:700px)and (max-width:1920px){
+    .edificio{
+        justify-content: flex-end;
+        padding-top: 5em;
+        padding-bottom: 50px;
+    }
+    .edificio-texto{
+        width: 40%;
+        padding: 3em;
+    }
+}
+@media (min-width:700px)and (max-width:800px){
+    .edificio{
+        justify-content: flex-end;
+        padding-top: 5em;
+        padding-bottom: 50px;
+    }
+    .edificio-texto{
+        padding: 3em;
+    }
+}
+
+
+/* oradores */
+#oradores{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+.textos-oradores{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.textos-oradores h2{
+    margin-top:1em;
+    font-size: .7em;
+    font-weight: bolder;
+    color: #5E606A;
+}
+#titulo-p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.caja-orador{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+}
+.caja-orador img{
+    width: 100%;
+    height: 10em;
+    object-fit: fill;
+    justify-content: center;
+    align-self: center;
+}
+
+@media (min-width:700px) and (max-width:1920px){
+    .caja-orador{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    }
+    .caja-orador img{
+        border-radius: 5px 5px 0 0;
+        height: 20em;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #oradores{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1em 5em 1em 5em;
+    }
+    .textos-oradores h2{
+        font-size: 1.2em;
+    }
+    #titulo-p{
+        font-size: 2.2em;
+    }
+}
+@media (min-width:550px) and (max-width:700px){
+    .caja-orador img{
+        width: 100%;
+        height: 15em;
+    }
+    .oradores{
+        padding: 0 5em 0 5em;
+    }
+}
+@media (min-width:400px) and (max-width:550px){
+    .caja-orador img{
+        width: 100%;
+        height: 15em;
+    }
+    .oradores{
+        padding: 0 4em 0 4em;
+    }
+}
+@media (min-width:600px) and (max-width:700px){
+    .caja-orador img{
+        width: 100%;
+        height: 15em;
+    }
+    .oradores{
+        padding: 0 7em 0 7em;
+    }
+}
+
+.textos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top:.5em;
+}
+.textos p{
+    margin-right: .3em;
+    border-radius: 0.3em;
+    padding: .3em;
+    background-color: orange;
+    font-weight: bolder;
+}
+#react-text{
+    background-color: aqua;
+    color: #fff;
+    font-weight: bolder;
+}
+#text1-ada{
+    background-color: grey;
+    color: #fff;
+}
+#text2-ada{
+    background-color: red;
+    color: #fff;
+}
+.textos-orador{
+    padding: .8em;
+}
+.textos-orador h3{
+    margin-bottom: 0.5em;
+}
+
+/* BSAS INFO */
+.bsasinfo{
+    display: flex;
+    flex-direction: column;
+    background-color: #2D2C35;
+}
+.info-text{
+    padding: .7em;
+}
+.info-text h2{
+    color: #fff;
+    margin-bottom: .5em;
+}
+.info-text p{
+    color: #fff;
+    margin-bottom: 1em;
+    background-color: #2D2C35;
+}
+.info-text button{
+    border-radius: .3em;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    padding: .3em;
+}
+.bsasinfo img{
+    width: 100%;
+    object-fit: fill;
+}
+@media (min-width:600px) and (max-width:1920px){
+    .bsasinfo{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .bsasinfo img{
+        width:50%;
+    }
+    .info-text{
+        flex-wrap: wrap;
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+/* FORMULARIO */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario h2{
+    margin-top:1em;
+    font-size: .7em;
+    font-weight: bolder;
+    color: #5E606A;
+    margin-bottom: .2em;
+}
+#formulario-p{
+    font-size: 1em;
+    font-weight: bold;
+}
+.formulario-p2{
+    font-size: 0.8em;
+    margin: 5px;
+}
+.form--text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form--text input{
+    height: 2em;
+}
+#formulario-form{
+    font-size: 0.8em;
+}
+.form--coment{
+    width: 100%;
+    height: 5em;
+    border-radius: 0.3em;
+    border: 1px solid grey;
+}
+.formulario button{
+    width: 100%;
+    background-color: #69BF0D;
+    border-radius: 0.3em;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+@media (min-width:550px) and (max-width:1920px){
+    .form--text{
+        flex-direction: row;
+        padding-bottom: .5em;
+    }
+    .form--text input{
+        margin: 1px;
+        width: 100%;
+    }
+    .formulario form{
+        width: 38%;
+    }
+    #formulario-form{
+        align-self: flex-start;
+    }
+    .formulario{
+        padding: 10px 0px 0px 10px;
+    }
+}
+/* footer */
+.footer_ul{
+    display: flex;
+    flex-direction: row;
+    background-color: #1A286E;
+    padding: .1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer_ul a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6em;
+    margin: .5em;
+}
+@media (min-width:530px) and (max-width:1920px){
+    .footer_ul{
+        padding: .5em;
+    }
+    .footer_ul a{
+        margin: 20px;
+        font-size: .8em;
+        padding: 0 2em 0 2em;
+    }
+}
+
+/* section pagos */
+
+.descuentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#estudiantes, #trainee, #junior{
+    border:1px solid cyan;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+@media (min-width:720px) and (max-width:1920px){
+    .descuentos{
+        flex-direction: row;
+        height: 250px;
+    }
+}
+#junior{
+    border: 1px solid orange;
+}
+
+.p-dto{
+    font-weight: bolder;
+    margin:10px 0 10px 0;
+    font-size: 20px;
+}
+.p-doc{
+    font-size: 12px;
+    color: grey;
+}
+/* formulario  2*/
+.form--descuentos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.form--descuentos h1{
+    font-size: 25px;;
+}
+
+#p-venta{
+    font-size: 12px;
+    margin: 0 0 2px 0;
+}
+#form--dtos{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:720px) and (max-width:1920px){
+    #form--dtos{
+        width: 40%;
+    }
+    .form--input{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2px;
+    }
+    .form--input input{
+        width: 49.55%;
+        padding: 10px;
+    }
+    #input-correo{
+        padding: 10px;
+        width: 100%;
+    }
+    #select-option{
+        width: 49.55%;
+    }
+    .form--descuentos{
+        justify-content: center;
+        align-items: center;
+    }
+    .botones{
+        display: flex;
+        width: 40%;
+    }
+    #btn-resumen, #btn-borrar{
+        width: 100%;
+    }
+    #mostrar--pago{
+        width: 100%;
+    }
+}
+#form--dtos input, #select-option{
+    margin: 1px;
+    height: 2.5em;
+    border-radius: .3em;
+    border: 1px solid grey;
+}
+
+
+#mostrar--pago{
+    background-color: aquamarine;
+    border-radius: .3em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+    padding: .3em;
+}
+#mostrar-pago--p{
+    padding: .3em;
+    font-weight: bolder;
+    font-size: 1em;
+    color: #1A286E;
+}
+#descuentoTotal{
+    padding: .3em;
+    font-weight: bolder;
+    font-size: 1em;
+    color: #1A286E;
+}
+
+#btn-borrar, #btn-resumen{
+    border-radius: .3em;
+    border: none;
+    background-color: #69BF0D;
+    padding: .3em;
+    margin: 0px 10px 5px 10px;
+}
+#btn-borrar p,#btn-resumen p{
+    color: #fff;
+    padding: .4em;
+}
+.label-etiquetas{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+}
